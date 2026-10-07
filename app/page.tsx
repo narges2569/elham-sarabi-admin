@@ -1,1 +1,6 @@
-import {redirect} from "next/navigation"; export default function Home(){redirect("/admin")}
+import { redirect } from "next/navigation";
+import {supabaseBrowser} from "../../lib/supabase";
+
+export default function Home() {
+  redirect("/admin");
+}
